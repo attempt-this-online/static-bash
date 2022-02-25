@@ -1,0 +1,2 @@
+#!/bin/sh
+docker run --rm debian:unstable bash -c '{ apt-get update; apt-get install bash-static; } >/dev/null 2>&1; cat /bin/bash-static' > bash
